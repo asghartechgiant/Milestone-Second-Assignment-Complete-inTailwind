@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -21,7 +22,10 @@ export default function ContactPage() {
                   </h1>
                   <div className="absolute bottom-0 w-full lg:p-11 p-5">
                     <div className="bg-white rounded-lg p-6 block">
-                      <a href="javascript:;" className="flex items-center mb-6">
+                      <Link
+                        href="javascript:;"
+                        className="flex items-center mb-6"
+                      >
                         <svg
                           width="30"
                           height="30"
@@ -40,8 +44,11 @@ export default function ContactPage() {
                         <h5 className="text-black text-base font-normal leading-6 ml-5">
                           03130242024
                         </h5>
-                      </a>
-                      <a href="javascript:;" className="flex items-center mb-6">
+                      </Link>
+                      <Link
+                        href="javascript:;"
+                        className="flex items-center mb-6"
+                      >
                         <svg
                           width="30"
                           height="30"
@@ -59,8 +66,8 @@ export default function ContactPage() {
                         <h5 className="text-black text-base font-normal leading-6 ml-5">
                           asghar.akram004@gmail.com
                         </h5>
-                      </a>
-                      <a href="javascript:;" className="flex items-center">
+                      </Link>
+                      <Link href="javascript:;" className="flex items-center">
                         <svg
                           width="30"
                           height="30"
@@ -82,7 +89,7 @@ export default function ContactPage() {
                         <h5 className="text-black text-base font-normal leading-6 ml-5">
                           korangi 1/2 sector 48/A
                         </h5>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

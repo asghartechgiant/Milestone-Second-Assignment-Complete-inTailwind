@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a
+            <Link
               href="/"
               className="flex items-center"
               target="_blank"
@@ -18,7 +20,7 @@ export default function Footer() {
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 DesignHeaven
               </span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -27,26 +29,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a
+                  <Link
                     href="https://github.com/asghartechgiant/"
                     className="hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="GitHub"
                   >
                     Github
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://discord.com/app"
                     className="hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Discord"
                   >
                     Discord
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -56,14 +56,14 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -73,45 +73,41 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a
+            <Link
               href="/"
               className="hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Asghar™
-            </a>
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <a
+            <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              aria-label="Facebook"
             >
               {/* SVG for Facebook */}
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-              aria-label="Discord"
             >
               {/* SVG for Discord */}
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-              aria-label="Twitter"
             >
               {/* SVG for Twitter */}
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-              aria-label="GitHub"
             >
               {/* SVG for GitHub */}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

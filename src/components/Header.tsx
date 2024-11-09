@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 relative z-[1]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
+        <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse "
         >
@@ -19,7 +19,7 @@ export default function Header() {
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             DesignHeaven
           </span>
-        </a>
+        </Link>
         <div className="flex md:order-2">
           <button
             type="button"

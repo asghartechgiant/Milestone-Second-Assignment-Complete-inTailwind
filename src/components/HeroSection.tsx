@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -17,10 +19,10 @@ export default function HeroSection() {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full px-3 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             Showcasing my latest projects.{" "}
-            <a href="#projects" className="font-semibold text-indigo-600">
+            <Link href="#projects" className="font-semibold text-indigo-600">
               <span className="absolute inset-0" aria-hidden="true"></span>See
               my work <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="text-center">
@@ -33,18 +35,18 @@ export default function HeroSection() {
             bring your ideas to life.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
+            <Link
               href="#about"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get in Touch
-            </a>
-            <a
+            </Link>
+            <Link
               href="#portfolio"
               className="text-sm font-semibold text-gray-900"
             >
               View Portfolio <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
